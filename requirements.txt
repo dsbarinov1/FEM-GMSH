@@ -1,0 +1,7 @@
+numpy
+matplotlib
+matplotlib-inline
+st-pages
+gmsh
+pygmsh
+meshio
