@@ -1,0 +1,11 @@
+$MeshFormat
+4.1 0 8
+$EndMeshFormat
+$PhysicalNames
+2
+1 2 "BOUNDARY_1"
+2 1 "MARKER_1"
+$EndPhysicalNames
+$Entities
+0 0 0 0
+$EndEntities
