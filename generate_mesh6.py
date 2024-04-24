@@ -65,15 +65,15 @@ def intersec_mesh(output_file, width):
     gmsh.model.occ.synchronize()
     gmsh.model.mesh.generate(2)
     gmsh.fltk.run()
-    gmsh.write(" intersec_mesh.msh")
+    gmsh.write("intersec_mesh.msh")
     gmsh.finalize()
 
 if __name__ == "__main__":
     output_file = sys.argv[1]
-    width_1 = float(sys.argv[2])
-    height_1 = float(sys.argv[3])
-    width_2 = float(sys.argv[4])
-    height_2 = float(sys.argv[5])
+    width_1 = 10
+    height_1 = 10
+    width_2 = 10
+    height_2 = 10
     # selectbox_1 =sys.argv[6]
     # selectbox_2 = sys.argv[7]
     # print(selectbox_1)
@@ -81,6 +81,6 @@ if __name__ == "__main__":
     if output_file == "union_mesh6.msh":
         union_mesh(output_file, width_1, height_1, width_2, height_2)
     elif output_file == "diff_mesh6.msh":
-        diff_mesh(output_file, width)
-    elif output_file == "intersec_mesh6.msh":
-        intersec_mesh(output_file, width)
+        diff_mesh(output_file, width_1)
+    elif output_file == "intersec_mesh.msh":
+        intersec_mesh(output_file, width_1)
