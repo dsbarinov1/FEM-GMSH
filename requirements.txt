@@ -5,3 +5,5 @@ st-pages
 gmsh
 pygmsh
 meshio
+stpyvista
+pyvista
